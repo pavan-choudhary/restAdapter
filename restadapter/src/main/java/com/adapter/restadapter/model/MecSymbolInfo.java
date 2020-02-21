@@ -1,132 +1,167 @@
 package com.adapter.restadapter.model;
 
 public class MecSymbolInfo {
-	private double adjRate;
-	private String calcBase;
-	private String priodicity;
-	private double duration;
-	private String trdCon;
-	private String lote;
-	private String trdTTV;
-	private String symType;
-	private String modality;
-	private String trdType;
-	private String symEst;
-	private String expiryDays;
-	private int expiryDate;
-	private int issueDate;
-	private int issueTerm;
-	private double issueRate;
-	private String settlementCode;
-	private String isShortSell;
-	
-	public void setSymEst(String symEst) {
-		this.symEst = symEst;
-	}
-	public void setAdjRate(double adjRate) {
-		this.adjRate = adjRate;
-	}
-	public void setCalcBase(String calcBase) {
-		this.calcBase = calcBase;
-	}
-	public void setPriodicity(String priodicity) {
-		this.priodicity = priodicity;
-	}
-	public void setDuration(double duration) {
-		this.duration = duration;
-	}
-	public void setTrdCon(String trdCon) {
-		this.trdCon = trdCon;
-	}
-	public void setLote(String lote) {
-		this.lote = lote;
-	}
-	public void setTrdTTV(String trdTTV) {
-		this.trdTTV = trdTTV;
-	}
-	public void setSymType(String symType) {
-		this.symType = symType;
-	}
-	public void setModality(String modality) {
-		this.modality = modality;
-	}
-	public void setTrdType(String trdType) {
-		this.trdType = trdType;
-	}
-	public void setExpiryDays(String expiryDays) {
-		this.expiryDays = expiryDays;
-	}
-	public void setExpiryDate(int expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public void setIssueDate(int issueDate) {
-		this.issueDate = issueDate;
-	}
-	public void setIssueTerm(int issueTerm) {
-		this.issueTerm = issueTerm;
-	}
-	public void setIssueRate(double issueRate) {
-		this.issueRate = issueRate;
-	}
-	public void setSettlementCode(String settlementCode) {
-		this.settlementCode = settlementCode;
-	}
+	private double AdjRate;
+	private String CalcBase;
+	private String Priodicity;
+	private double Duration;
+	private String TrdCon;
+	private String Lote;
+	private String TrdTTV;
+	private String SymType;
+	private String Modality;
+	private String TrdType;
+	private String SymEst;
+	private String ExpiryDays;
+	private int ExpiryDate;
+	private int IssueDate;
+	private int IssueTerm;
+	private double IssueRate;
+	private String SettlementCode;
+	private String IsShortSell;
+
 	public double getAdjRate() {
-		return adjRate;
+		return AdjRate;
 	}
+
+	public void setAdjRate(double adjRate) {
+		AdjRate = adjRate;
+	}
+
 	public String getCalcBase() {
-		return calcBase;
+		return CalcBase;
 	}
+
+	public void setCalcBase(String calcBase) {
+		CalcBase = calcBase;
+	}
+
 	public String getPriodicity() {
-		return priodicity;
+		return Priodicity;
 	}
+
+	public void setPriodicity(String priodicity) {
+		Priodicity = priodicity;
+	}
+
 	public double getDuration() {
-		return duration;
+		return Duration;
 	}
+
+	public void setDuration(double duration) {
+		Duration = duration;
+	}
+
 	public String getTrdCon() {
-		return trdCon;
+		return TrdCon;
 	}
+
+	public void setTrdCon(String trdCon) {
+		TrdCon = trdCon;
+	}
+
 	public String getLote() {
-		return lote;
+		return Lote;
 	}
+
+	public void setLote(String lote) {
+		Lote = lote;
+	}
+
 	public String getTrdTTV() {
-		return trdTTV;
+		return TrdTTV;
 	}
+
+	public void setTrdTTV(String trdTTV) {
+		TrdTTV = trdTTV;
+	}
+
 	public String getSymType() {
-		return symType;
+		return SymType;
 	}
+
+	public void setSymType(String symType) {
+		SymType = symType;
+	}
+
 	public String getModality() {
-		return modality;
+		return Modality;
 	}
+
+	public void setModality(String modality) {
+		Modality = modality;
+	}
+
 	public String getTrdType() {
-		return trdType;
+		return TrdType;
 	}
+
+	public void setTrdType(String trdType) {
+		TrdType = trdType;
+	}
+
 	public String getSymEst() {
-		return symEst;
+		return SymEst;
 	}
+
+	public void setSymEst(String symEst) {
+		SymEst = symEst;
+	}
+
 	public String getExpiryDays() {
-		return expiryDays;
+		return ExpiryDays;
 	}
+
+	public void setExpiryDays(String expiryDays) {
+		ExpiryDays = expiryDays;
+	}
+
 	public int getExpiryDate() {
-		return expiryDate;
+		return ExpiryDate;
 	}
+
+	public void setExpiryDate(int expiryDate) {
+		ExpiryDate = expiryDate;
+	}
+
 	public int getIssueDate() {
-		return issueDate;
+		return IssueDate;
 	}
+
+	public void setIssueDate(int issueDate) {
+		IssueDate = issueDate;
+	}
+
 	public int getIssueTerm() {
-		return issueTerm;
+		return IssueTerm;
 	}
+
+	public void setIssueTerm(int issueTerm) {
+		IssueTerm = issueTerm;
+	}
+
 	public double getIssueRate() {
-		return issueRate;
+		return IssueRate;
 	}
+
+	public void setIssueRate(double issueRate) {
+		IssueRate = issueRate;
+	}
+
 	public String getSettlementCode() {
-		return settlementCode;
+		return SettlementCode;
 	}
+
+	public void setSettlementCode(String settlementCode) {
+		SettlementCode = settlementCode;
+	}
+
 	public String getIsShortSell() {
-		return isShortSell;
+		return IsShortSell;
 	}
+
 	public void setIsShortSell(String isShortSell) {
-		this.isShortSell = isShortSell;
+		IsShortSell = isShortSell;
 	}
-	
+
 }

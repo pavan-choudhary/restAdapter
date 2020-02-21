@@ -1,28 +1,28 @@
 package com.adapter.restadapter.model;
 
 public class Party {
-	private String partyId;
-	private int partyRole;
-	
+	private String PartyId;
+	private int PartyRole;
+
 	public Party(String id, int role) {
-		this.partyId = id;
-		this.partyRole = role;
+		this.PartyId = id;
+		this.PartyRole = role;
 	}
-	
+
 	public void setPartyId(String partyId) {
-		this.partyId = partyId;
+		this.PartyId = partyId;
 	}
 
 	public void setPartyRole(int partyRole) {
-		this.partyRole = partyRole;
+		this.PartyRole = partyRole;
 	}
 
 	public String getPartyId() {
-		return partyId;
+		return PartyId;
 	}
 
 	public int getPartyRole() {
-		return partyRole;
+		return PartyRole;
 	}
 
 }

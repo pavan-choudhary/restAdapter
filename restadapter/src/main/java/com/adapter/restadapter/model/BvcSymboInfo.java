@@ -2,95 +2,121 @@ package com.adapter.restadapter.model;
 
 public class BvcSymboInfo {
 	private String ISIN;
-	private String reinv;
-	private String transaction;
-	private String liqTerm;
-	private String trdSimType;
-	private double captureValue;
-	private String mktType;
-	private String allowed;
+	private String Reinv;
+	private String Transaction;
+	private String LiqTerm;
+	private String TrdSimType;
+	private double CaptureValue;
+	private String MktType;
+	private String Allowed;
 	private String PTI;
 	private String PET;
-	private int seqType;
-	private int seqNumber;
-	private String horaOpe;
+	private int SeqType;
+	private int SeqNumber;
+	private String HoraOpe;
+
 	public void setISIN(String iSIN) {
 		ISIN = iSIN;
 	}
+
 	public void setReinv(String reinv) {
-		this.reinv = reinv;
+		this.Reinv = reinv;
 	}
+
 	public void setTransaction(String transaction) {
-		this.transaction = transaction;
+		this.Transaction = transaction;
 	}
+
 	public void setLiqTerm(String liqTerm) {
-		this.liqTerm = liqTerm;
+		this.LiqTerm = liqTerm;
 	}
+
 	public void setTrdSimType(String trdSimType) {
-		this.trdSimType = trdSimType;
+		this.TrdSimType = trdSimType;
 	}
+
 	public void setCaptureValue(double captureValue) {
-		this.captureValue = captureValue;
+		this.CaptureValue = captureValue;
 	}
+
 	public void setMktType(String mktType) {
-		this.mktType = mktType;
+		this.MktType = mktType;
 	}
+
 	public void setAllowed(String allowed) {
-		this.allowed = allowed;
+		this.Allowed = allowed;
 	}
+
 	public void setPTI(String pTI) {
 		PTI = pTI;
 	}
+
 	public void setPET(String pET) {
 		PET = pET;
 	}
+
 	public void setSeqType(int seqType) {
-		this.seqType = seqType;
+		this.SeqType = seqType;
 	}
+
 	public void setSeqNumber(int seqNumber) {
-		this.seqNumber = seqNumber;
+		this.SeqNumber = seqNumber;
 	}
+
 	public void setHoraOpe(String horaOpe) {
-		this.horaOpe = horaOpe;
+		this.HoraOpe = horaOpe;
 	}
+
 	public String getISIN() {
 		return ISIN;
 	}
+
 	public String getReinv() {
-		return reinv;
+		return Reinv;
 	}
+
 	public String getTransaction() {
-		return transaction;
+		return Transaction;
 	}
+
 	public String getLiqTerm() {
-		return liqTerm;
+		return LiqTerm;
 	}
+
 	public String getTrdSimType() {
-		return trdSimType;
+		return TrdSimType;
 	}
+
 	public double getCaptureValue() {
-		return captureValue;
+		return CaptureValue;
 	}
+
 	public String getMktType() {
-		return mktType;
+		return MktType;
 	}
+
 	public String getAllowed() {
-		return allowed;
+		return Allowed;
 	}
+
 	public String getPTI() {
 		return PTI;
 	}
+
 	public String getPET() {
 		return PET;
 	}
+
 	public int getSeqType() {
-		return seqType;
+		return SeqType;
 	}
+
 	public int getSeqNumber() {
-		return seqNumber;
+		return SeqNumber;
 	}
+
 	public String getHoraOpe() {
-		return horaOpe;
+		return HoraOpe;
 	}
-	
+
 }

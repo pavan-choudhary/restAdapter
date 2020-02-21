@@ -1,47 +1,48 @@
 package com.adapter.restadapter.model;
 
 public class Payload {
-	private Header header;
-	private BvcSymboInfo bvcSymboInfo;
-	private EquitiesInfo equitiesInfo;
-	private SecurityList securityList;
-	private MecSymbolInfo mecSymbolInfo;
-	private ExecReport execReport;
-	public void setHeader(Header header) {
-		this.header = header;
-	}
-	public void setBvcSymboInfo(BvcSymboInfo bvcSymboInfo) {
-		this.bvcSymboInfo = bvcSymboInfo;
-	}
-	public void setEquitiesInfo(EquitiesInfo equitiesInfo) {
-		this.equitiesInfo = equitiesInfo;
-	}
-	public void setSecurityList(SecurityList securityList) {
-		this.securityList = securityList;
-	}
-	public void setMecSymbolInfo(MecSymbolInfo mecSymbolInfo) {
-		this.mecSymbolInfo = mecSymbolInfo;
-	}
-	public void setExecReport(ExecReport execReport) {
-		this.execReport = execReport;
-	}
+	private Header Header;
+	private BvcSymboInfo BvcSymboInfo;
+	private EquitiesInfo EquitiesInfo;
+	private SecurityList SecurityList;
+	private MecSymbolInfo MecSymbolInfo;
+	private ExecReport ExecReport;
 	public Header getHeader() {
-		return header;
+		return Header;
+	}
+	public void setHeader(Header header) {
+		Header = header;
 	}
 	public BvcSymboInfo getBvcSymboInfo() {
-		return bvcSymboInfo;
+		return BvcSymboInfo;
+	}
+	public void setBvcSymboInfo(BvcSymboInfo bvcSymboInfo) {
+		BvcSymboInfo = bvcSymboInfo;
 	}
 	public EquitiesInfo getEquitiesInfo() {
-		return equitiesInfo;
+		return EquitiesInfo;
+	}
+	public void setEquitiesInfo(EquitiesInfo equitiesInfo) {
+		EquitiesInfo = equitiesInfo;
 	}
 	public SecurityList getSecurityList() {
-		return securityList;
+		return SecurityList;
+	}
+	public void setSecurityList(SecurityList securityList) {
+		SecurityList = securityList;
 	}
 	public MecSymbolInfo getMecSymbolInfo() {
-		return mecSymbolInfo;
+		return MecSymbolInfo;
+	}
+	public void setMecSymbolInfo(MecSymbolInfo mecSymbolInfo) {
+		MecSymbolInfo = mecSymbolInfo;
 	}
 	public ExecReport getExecReport() {
-		return execReport;
+		return ExecReport;
 	}
+	public void setExecReport(ExecReport execReport) {
+		ExecReport = execReport;
+	}
+	
 	
 }

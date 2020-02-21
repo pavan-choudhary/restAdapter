@@ -1,33 +1,32 @@
 package com.adapter.restadapter.model;
 
 public class Header {
-	private int sourceId;
-	private String sourceTime;
-	private String market;
+	private int SourceId;
+	private String SourceTime;
+	private String Market;
 
 	public void setSourceId(int sourceId) {
-		this.sourceId = sourceId;
+		this.SourceId = sourceId;
 	}
 
 	public void setSourceTime(String sourceTime) {
-		this.sourceTime = sourceTime;
+		this.SourceTime = sourceTime;
 	}
 
 	public void setMarket(String market) {
-		this.market = market;
+		this.Market = market;
 	}
 
 	public int getSourceId() {
-		return sourceId;
+		return SourceId;
 	}
 
 	public String getSourceTime() {
-		return sourceTime;
+		return SourceTime;
 	}
 
 	public String getMarket() {
-		return market;
+		return Market;
 	}
-	
 
 }

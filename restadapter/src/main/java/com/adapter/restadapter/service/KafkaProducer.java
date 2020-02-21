@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import com.adapter.restadapter.model.DataObject;
 import com.adapter.restadapter.model.Payload;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+@RefreshScope
 @Service
 public class KafkaProducer {
 

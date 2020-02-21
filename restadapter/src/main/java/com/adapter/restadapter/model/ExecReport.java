@@ -3,125 +3,158 @@ package com.adapter.restadapter.model;
 import java.util.List;
 
 public class ExecReport {
-	private int sourceId;
-	private String execType;
-	private List<Party> party;
-	private String transactTime;
-	private int rdMatchID;
-	private String side;
-	private String symbol;
-	private int settlDate;
-	private int settlType;
-	private long lastQty;
-	private double lastPx;
-	private double grossTradeAmt;
-	private String yield;
-	private String isPreArrenged;
-	private double stipulationValue;
-	private String securitySubType;
-	private String getSide;
+	private int SourceId;
+	private String ExecType;
+	private List<Party> Party;
+	private String TransactTime;
+	private int RdMatchID;
+	private String Side;
+	private String Symbol;
+	private int SettlDate;
+	private int SettlType;
+	private long LastQty;
+	private double LastPx;
+	private double GrossTradeAmt;
+	private String Yield;
+	private String IsPreArrenged;
+	private double StipulationValue;
+	private String SecuritySubType;
+	private String GetSide;
+
 	public void setSourceId(int sourceId) {
-		this.sourceId = sourceId;
+		this.SourceId = sourceId;
 	}
+
 	public void setExecType(String execType) {
-		this.execType = execType;
+		this.ExecType = execType;
 	}
+
 	public void setParty(List<Party> party) {
-		this.party = party;
+		this.Party = party;
 	}
+
 	public void setTransactTime(String transactTime) {
-		this.transactTime = transactTime;
+		this.TransactTime = transactTime;
 	}
+
 	public void setRdMatchID(int rdMatchID) {
-		this.rdMatchID = rdMatchID;
+		this.RdMatchID = rdMatchID;
 	}
+
 	public void setSide(String side) {
-		this.side = side;
+		this.Side = side;
 	}
+
 	public void setSymbol(String symbol) {
-		this.symbol = symbol;
+		this.Symbol = symbol;
 	}
+
 	public void setSettlDate(int settlDate) {
-		this.settlDate = settlDate;
+		this.SettlDate = settlDate;
 	}
+
 	public void setSettlType(int settlType) {
-		this.settlType = settlType;
+		this.SettlType = settlType;
 	}
+
 	public void setLastQty(long lastQty) {
-		this.lastQty = lastQty;
+		this.LastQty = lastQty;
 	}
+
 	public void setLastPx(double lastPx) {
-		this.lastPx = lastPx;
+		this.LastPx = lastPx;
 	}
+
 	public void setGrossTradeAmt(double grossTradeAmt) {
-		this.grossTradeAmt = grossTradeAmt;
+		this.GrossTradeAmt = grossTradeAmt;
 	}
+
 	public void setYield(String yield) {
-		this.yield = yield;
+		this.Yield = yield;
 	}
+
 	public void setIsPreArrenged(String isPreArrenged) {
-		this.isPreArrenged = isPreArrenged;
+		this.IsPreArrenged = isPreArrenged;
 	}
+
 	public void setStipulationValue(double stipulationValue) {
-		this.stipulationValue = stipulationValue;
+		this.StipulationValue = stipulationValue;
 	}
+
 	public void setSecuritySubType(String securitySubType) {
-		this.securitySubType = securitySubType;
+		this.SecuritySubType = securitySubType;
 	}
+
 	public void setGetSide(String getSide) {
-		this.getSide = getSide;
+		this.GetSide = getSide;
 	}
+
 	public int getSourceId() {
-		return sourceId;
+		return SourceId;
 	}
+
 	public String getExecType() {
-		return execType;
+		return ExecType;
 	}
+
 	public List<Party> getParty() {
-		return party;
+		return Party;
 	}
+
 	public String getTransactTime() {
-		return transactTime;
+		return TransactTime;
 	}
+
 	public int getRdMatchID() {
-		return rdMatchID;
+		return RdMatchID;
 	}
+
 	public String getSide() {
-		return side;
+		return Side;
 	}
+
 	public String getSymbol() {
-		return symbol;
+		return Symbol;
 	}
+
 	public int getSettlDate() {
-		return settlDate;
+		return SettlDate;
 	}
+
 	public int getSettlType() {
-		return settlType;
+		return SettlType;
 	}
+
 	public long getLastQty() {
-		return lastQty;
+		return LastQty;
 	}
+
 	public double getLastPx() {
-		return lastPx;
+		return LastPx;
 	}
+
 	public double getGrossTradeAmt() {
-		return grossTradeAmt;
+		return GrossTradeAmt;
 	}
+
 	public String getYield() {
-		return yield;
+		return Yield;
 	}
+
 	public String getIsPreArrenged() {
-		return isPreArrenged;
+		return IsPreArrenged;
 	}
+
 	public double getStipulationValue() {
-		return stipulationValue;
+		return StipulationValue;
 	}
+
 	public String getSecuritySubType() {
-		return securitySubType;
+		return SecuritySubType;
 	}
+
 	public String getGetSide() {
-		return getSide;
+		return GetSide;
 	}
-	
-		
+
 }

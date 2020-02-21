@@ -1,20 +1,23 @@
 package com.adapter.restadapter.model;
 
 public class SecurityList {
-	private String currency;
-	private double currencyValue;
+	private String Currency;
+	private double CurrencyValue;
+
 	public void setCurrency(String currency) {
-		this.currency = currency;
+		this.Currency = currency;
 	}
+
 	public void setCurrencyValue(double currencyValue) {
-		this.currencyValue = currencyValue;
+		this.CurrencyValue = currencyValue;
 	}
+
 	public String getCurrency() {
-		return currency;
+		return Currency;
 	}
+
 	public double getCurrencyValue() {
-		return currencyValue;
+		return CurrencyValue;
 	}
-	
-	
+
 }
