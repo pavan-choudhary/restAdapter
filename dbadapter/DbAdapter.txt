@@ -1,0 +1,208 @@
+2020-02-27 21:53:41.148  INFO 19663 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-02-27 21:53:41.398  INFO 19663 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-02-27 21:53:41.398  WARN 19663 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/DbAdapter/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2020-02-27 21:53:41.404  INFO 19663 --- [main] c.a.dbadapter.DbadapterApplication       : No active profile set, falling back to default profiles: default
+2020-02-27 21:53:44.296  INFO 19663 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-27 21:53:44.349  INFO 19663 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 JPA repository interfaces.
+2020-02-27 21:53:44.431  WARN 19663 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'kafkaTemplate' defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration; factoryMethodName=kafkaTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAutoConfiguration.class]] for bean 'kafkaTemplate': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=kafkaConfig; factoryMethodName=kafkaTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/adapter/dbadapter/config/KafkaConfig.class]] bound.
+2020-02-27 21:53:44.459  INFO 19663 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-27 21:53:44.466 ERROR 19663 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'kafkaTemplate', defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/adapter/dbadapter/config/KafkaConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020-02-27 21:54:47.303  INFO 19706 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-02-27 21:54:47.536  INFO 19706 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-02-27 21:54:47.537  WARN 19706 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/DbAdapter/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2020-02-27 21:54:47.543  INFO 19706 --- [main] c.a.dbadapter.DbadapterApplication       : No active profile set, falling back to default profiles: default
+2020-02-27 21:54:49.446  INFO 19706 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-27 21:54:49.508  INFO 19706 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 JPA repository interfaces.
+2020-02-27 21:54:50.180  INFO 19706 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3535b161-dd7b-3cd4-88e3-07ca4feebf8c
+2020-02-27 21:54:50.926  INFO 19706 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-27 21:54:51.696  INFO 19706 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2020-02-27 21:54:51.717  INFO 19706 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-27 21:54:51.718  INFO 19706 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-27 21:54:52.094  INFO 19706 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-27 21:54:52.095  INFO 19706 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4510 ms
+2020-02-27 21:54:53.290  INFO 19706 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-27 21:54:53.767  INFO 19706 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-27 21:54:54.052  INFO 19706 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-27 21:54:54.515  INFO 19706 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-27 21:54:55.266  INFO 19706 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-27 21:54:55.651  INFO 19706 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-27 21:54:56.406  INFO 19706 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-27 21:54:56.427  INFO 19706 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 21:54:56.809  WARN 19706 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-27 21:54:57.169  INFO 19706 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-27 21:54:57.951  INFO 19706 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-27 21:54:58.988  INFO 19706 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-02-27 21:54:59.995  INFO 19706 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-02-27 21:55:00.036  INFO 19706 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-02-27 21:55:00.189  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:00
+2020-02-27 21:55:00.332  INFO 19706 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2020-02-27 21:55:00.734  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:00.873  INFO 19706 --- [scheduling-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-02-27 21:55:01.033  INFO 19706 --- [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-02-27 21:55:01.033  INFO 19706 --- [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-02-27 21:55:01.033  INFO 19706 --- [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1582820701029
+2020-02-27 21:55:01.335  INFO 19706 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-02-27 21:55:01.339  INFO 19706 --- [main] c.a.dbadapter.DbadapterApplication       : Started DbadapterApplication in 16.198 seconds (JVM running for 16.92)
+2020-02-27 21:55:01.642  INFO 19706 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: ZO-JPpicTbOJiWNFcf1_ZA
+2020-02-27 21:55:01.678  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:01.700  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:01.701  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:06.702  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:06
+2020-02-27 21:55:06.709  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:06.711  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:06.712  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:06.715  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:11.716  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:11
+2020-02-27 21:55:11.724  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:11.725  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:11.727  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:11.728  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:16.730  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:16
+2020-02-27 21:55:16.736  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:16.738  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:16.739  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:16.740  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:21.741  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:21
+2020-02-27 21:55:21.750  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:21.752  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:21.753  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:21.754  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:26.755  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:26
+2020-02-27 21:55:26.761  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:26.763  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:26.764  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:26.766  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:31.767  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:31
+2020-02-27 21:55:31.773  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:31.775  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:31.776  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:31.777  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:36.778  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:36
+2020-02-27 21:55:36.785  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:36.786  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:36.790  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:36.797  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:41.798  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:41
+2020-02-27 21:55:41.804  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:41.806  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:41.807  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:41.808  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:46.810  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:46
+2020-02-27 21:55:46.816  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:46.817  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:46.818  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:46.819  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:51.820  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:51
+2020-02-27 21:55:51.826  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:51.828  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:51.829  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:51.832  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:56.835  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:55:56
+2020-02-27 21:55:56.841  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:55:56.843  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:55:56.844  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:55:56.846  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:01.847  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:56:01
+2020-02-27 21:56:01.854  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:56:01.855  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:01.856  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:56:01.857  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:06.861  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:56:06
+2020-02-27 21:56:06.868  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:56:06.870  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:06.871  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:56:06.872  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:11.873  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:56:11
+2020-02-27 21:56:11.880  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:56:11.881  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:11.883  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:56:11.884  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:16.886  INFO 19706 --- [scheduling-1] com.adapter.dbadapter.service.DbService  : Scheduler started at: 2020/02/27 21:56:16
+2020-02-27 21:56:16.896  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"alpha","securityid":1,"seccode":"OOP"}
+2020-02-27 21:56:16.897  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:16.898  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : >>Data to kafka topic {"name":"DATA","securityid":2,"seccode":"Python"}
+2020-02-27 21:56:16.900  INFO 19706 --- [scheduling-1] c.a.dbadapter.service.KafkaProducer      : <<Data sent to topic db.topic
+2020-02-27 21:56:18.409  INFO 19706 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-02-27 21:56:18.452  INFO 19706 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-27 21:56:18.453  INFO 19706 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-02-27 21:56:18.471  INFO 19706 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-27 21:56:18.478  INFO 19706 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-27 21:56:18.507  INFO 19706 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
